@@ -1,0 +1,47 @@
+/* Container to hold both div1 and div2 */
+.container {
+  display: flex; /* Use Flexbox to arrange the divs horizontally */
+  justify-content: space-between; /* Space out div1 and div2 */
+  align-items: center;
+  flex-direction: row; /* Align items vertically in the center */
+  padding: 10px; /* Add padding to the container */
+}
+
+.col {
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  gap: 20px; /* Add space between sections */
+  padding: 20px;
+}
+/* Div1 for the menu and icon */
+.div1 {
+  display: flex; /* Use Flexbox to align the children inside div1 */
+  flex-direction: row; /* Stack items vertically */
+  gap: 10px; /* Space between each element inside div1 */
+}
+
+/* Div2 for Profile component */
+.div2 {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  /* Center Profile inside div2 */
+}
+
+/* Header styling for h1 */
+h1 {
+  margin: 0; /* Remove default margin from h1 */
+}
+
+/* Styling for p (menu items) */
+.div1 p {
+  margin: 5px 0; /* Add vertical margin for better spacing between menu items */
+  cursor: pointer; /* Make p items look clickable */
+  font-size: 16px; /* Set font size */
+}
+
+/* Optional: If Drop and MyIcon components need additional styling */
+.MyIcon,
+.Drop {
+  margin-right: 10px; /* Space for the icon and dropdown components */
+}
